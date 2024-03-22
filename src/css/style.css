@@ -1,6 +1,18 @@
-
+:root{
+    --Color-principal:#ba5624;
+    --color-secundario: #ffa552;
+    --color-fondos:#fcde9c;
+    --color-alterno:#38726c;
+    --font-color:#070707;
+}
+*{
+    /*variables de entorno*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
-
+    background-color: var(--Color-principal);
 }
 footer{
 
