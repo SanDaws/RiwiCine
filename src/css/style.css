@@ -7,16 +7,18 @@
     --color-fondos:#fcde9c;
     --color-alterno:#38726c;
     --font-color:#070707;
-    background-color:var(--color-fondos) ;
+    }
+body{
+        background-color:var(--color-fondos) ;
+    }
 
-
-}
 *{
     /*variables de entorno*/
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
+    
 }
 header{
     background-color: var(--Color-principal);
@@ -24,9 +26,11 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 5 10;
-    
+    position: sticky;
 }
-
+header h1{
+    font-size: 300%;
+}
 nav{
     display:  flex;
     gap: 10px;
@@ -37,7 +41,8 @@ nav a{
     text-decoration:none;
     
 }
-#estreno h2{
+h2{
+    font-size: 400%;
     margin-left: 10vh;
     
 }
@@ -46,21 +51,30 @@ nav a{
     background:linear-gradient(to bottom,var(--Color-principal),var(--color-secundario),var(--color-fondos) );
 }
 #estreno .img-portada-estrenos{
-    border: 5px solid black;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 20%;
+    margin: 0 30vw;
+}
+.img-portada-estrenos .img-portadas{
+    position: relative;
+    display: inline-block;
+    width: 20vw;
+    height: 40vh; 
+    
+    
 }
 
-.img-portada-estrenos .img-portadas{
-    width: 50%;
-    height: 20%;
-    
-    
-    
+.elementos-fexibles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 2%;
+
+}
+.elementos-fexibles .img-hijo-pelicula-cambio{
+
 }
 
 
