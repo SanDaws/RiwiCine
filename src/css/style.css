@@ -7,6 +7,7 @@
     --color-fondos:#fcde9c;
     --color-alterno:#38726c;
     --font-color:#070707;
+    background-color:var(--color-fondos) ;
 
 
 }
@@ -28,7 +29,8 @@ header{
 
 nav{
     display:  flex;
-    gap: 50px;
+    gap: 10px;
+    
 }
 nav a{
     color: var(--font-color);
@@ -37,27 +39,25 @@ nav a{
 }
 #estreno h2{
     margin-left: 10vh;
-}
-#estreno .img-portada-estrenos{
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 #estreno{
-    border: 2px solid;
     display: block;
-    
-    
-    background-color: linear-gradient(to bottom var(--Color-principal),var(--color-secundario), var(--color-fondos));
+    background:linear-gradient(to bottom,var(--Color-principal),var(--color-secundario),var(--color-fondos) );
 }
-.img-portada-estrenos{
-    margin: 25 25;
+#estreno .img-portada-estrenos{
+    border: 5px solid black;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    
+    justify-content: center;
+    margin: 0 20%;
 }
 
 .img-portada-estrenos .img-portadas{
     width: 50%;
-    height: 25vh;
+    height: 20%;
     
     
     
