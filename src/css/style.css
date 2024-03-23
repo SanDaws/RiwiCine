@@ -8,9 +8,6 @@
     --color-alterno:#38726c;
     --font-color:#070707;
     }
-body{
-        background-color:var(--color-fondos) ;
-    }
 
 *{
     /*variables de entorno*/
@@ -19,6 +16,9 @@ body{
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
     
+}
+body{
+    background-color:var(--color-fondos) ;
 }
 header{
     background-color: var(--Color-principal);
@@ -42,9 +42,14 @@ nav a{
     
 }
 h2{
-    font-size: 400%;
+    font-size: 10vh;
     margin-left: 10vh;
     
+}
+footer{
+    background: var(--color-secundario);
+    text-align: center;
+
 }
 #estreno{
     display: block;
@@ -56,24 +61,49 @@ h2{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 30vw;
+    margin: 0 29vw;
 }
 .img-portada-estrenos .img-portadas{
     position: relative;
     display: inline-block;
     width: 20vw;
-    height: 40vh; 
+    height: 67vh; 
+    /* width: 25vw;
+    height: 67vh; */
+
     
     
 }
 
-.elementos-fexibles {
+.colec-cart-peliculas{
     display: flex;
     flex-wrap: wrap;
     margin: 10px 2%;
+    row-gap: 1%;
+    column-gap: 10vh;
+    justify-items: center;
+
 
 }
-.elementos-fexibles .img-hijo-pelicula-cambio{
+
+.colec-cart-peliculas .fig-hijo-pelicula-cambio .img-cartelera {
+    width: 48vh;
+    height: 67vh;
+
+}
+#btn-Enviar{
+    width: 10%;
+}
+#contacto div{
+    display: flex;
+    justify-content: center;
+}
+#form-contac-mail{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    
 
 }
 
